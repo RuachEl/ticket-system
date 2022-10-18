@@ -6,7 +6,6 @@ import { Form, FormGroup, Input, Label, Button } from 'reactstrap';
 function App() {
   const [toSend, setToSend] = useState({
     from_name: '',
-    to_name: '',
     message: '',
     reply_to: '',
   });
@@ -50,18 +49,6 @@ function App() {
             value={toSend.from_name}
             onChange={handleChange}
             /> 
-          </FormGroup>
-          <FormGroup className='app__form-item'>
-            <Label for='to_name'>
-              To:
-            </Label>
-            <Input  
-              type='text'
-              name='to_name'
-              placeholder='to name'
-              value={toSend.to_name}
-              onChange={handleChange}
-            />
           </FormGroup>
           <FormGroup className='app__form-item'>
             <Label for='message'>

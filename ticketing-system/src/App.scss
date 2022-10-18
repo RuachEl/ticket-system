@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+  background-color: blanchedalmond;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  height: 100%;
+}
+
+.body {
+height: 100%;
+}
+
+.app__form-header {
+  background-color: forestgreen;
+}
+
+.app__form {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  
+  @media screen and (max-width: 400px) {
+      width: 100%        
+  }
+}
+
+.app__form-item {
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  border: none;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+Input{
+  line-height: 20px;
+}
+
+
+
+.app__form-button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10px;
+
+  &:hover {
+      cursor: pointer;
+  }
+}
